@@ -1,10 +1,85 @@
 <!DOCTYPE html>
-<html>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <body>
-        <h1 style="text-align: center;">Bem Vindo a minha página</h1>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular IMC</title>
+    <style type="text/css">
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(178, 202, 223);
+            align-self: center;
+        }
+        h1{
+            font-size: 50pt;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        .conteudo{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 10pt;
+        }
+        #resposta{
+            height: 70px;
+            width: 100px;
+            background-color: white;
+            border-color: black;
+            border-width: 5px;
+            display: flex;
+            justify-content: center;
+        }
+        #imc_resposta{
+            font-size: 20px;
+            align-self: center;
+        }
+        input[type=number] {
+            width: 20%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            font-size: 20px;
+            
+        }
+        input[type=button]{
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-decoration: none;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora de IMC</h1>
+    <h3 class="conteudo">Digite a sua altura em metros:</h3> 
+    <input class="conteudo" type="number" name="altura" id="altura">
+    <h3 class="conteudo">Digite o seu peso em quilogramas:</h3>
+    <input class="conteudo" type="number" name="peso" id="peso">
+    <br>
+    <input class="conteudo" type="button" name="resultado" value="Calcular" onclick="imc_cal()">
+    <div class="conteudo" id="resposta">
+        <p id="imc_resposta">0</p>
+    </div>  
+    <script">
+            function imc_cal(){
+                let peso = Number(window.document.getElementById("peso").value)
+                let altura = Number(window.document.getElementById("altura").value)
+                let imc =  peso / (altura * altura)
+                let res = window.document.getElementById("imc_resposta")
+                if (peso === 0 || altura === 0){
+                    //window.alert("Preencha dos os campos")
+                    //window.document.getElementById("peso").style.backgroundColor = 'red'
+                }else{
+                    res.textContent = imc.toFixed(2)
+                }
 
-        <p style="text-align: center;">Olá, meu nome é Bárbara Zamperete e eu sou estudante de Ciência da Computação</p>
-        <p style="text-align: center;">:)</p>
-    </body>
+
+            }
+    </script>
+</body>
 </html>
