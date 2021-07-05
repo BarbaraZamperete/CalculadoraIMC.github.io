@@ -12,16 +12,16 @@ function imc_cal(){
     }else{
         res.textContent = imc.toFixed(1)
         classifica(imc, res)
+        let peso_dif = peso_ideal(imc, peso, altura)
+        if (peso_dif === ' '){
+            av.textContent = 'Você está dentro da faixa de peso normal'
+        }else if(peso_dif>0){
+            av.textContent = `Você precisa de +${peso_dif}kg`
+        }else{
+            av.textContent = `Você precisa de ${peso_dif}kg`
+        }
     }
     window.location.href = '#res_container'
-    let peso_dif = peso_ideal(imc, peso, altura)
-    if (peso_dif === ' '){
-        av.textContent = 'Você está dentro da faixa de peso normal'
-    }else if(peso_dif>0){
-        av.textContent = `Você precisa de +${peso_dif}kg`
-    }else{
-        av.textContent = `Você precisa de ${peso_dif}kg`
-    }
 
     
 }
