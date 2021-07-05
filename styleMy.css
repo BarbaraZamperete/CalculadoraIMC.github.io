@@ -5,28 +5,71 @@ body{
     align-items: center;
     background-color: rgb(178, 202, 223);
     align-self: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h1{
     font-size: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
-.conteudo{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 10pt;
-}
+
 #resposta{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+#classifica{
+    font-size: 20px;
+    color: rgb(231, 14, 14);
+}
+/*
+#res_container{
     height: 70px;
-    width: 100px;
-    background-color: white;
+    width: 300px;
     border-color: black;
     border-width: 5px;
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    
+}
+
+#alto{
+    background-color: rgb(243, 41, 41);
+    height: 100%;
+    width: 100px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+#medio{
+    background-color: rgb(57, 200, 57);
+    height: 100%;
+    width: 100px;
+}
+#baixo{
+    background-color: rgb(56, 56, 221);
+    height: 100%;
+    width: 100px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 #imc_resposta{
     font-size: 20px;
     align-self: center;
 }
+*/
+form{
+    padding: 20px;
+    border-style: groove;
+    border-color: rgb(99, 111, 133);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(111, 146, 177);
+    margin: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10pt;
+    border-radius: 10px;
+}
+
 input[type=number] {
     width: 80%;
     max-width: 230px;
@@ -35,18 +78,19 @@ input[type=number] {
     margin: 8px 0;
     box-sizing: border-box;
     font-size: 20px;
+    border-radius: 10px;
     
 }
 input[type=button]{
     background-color: #4CAF50;
-    border: none;
+    border: 2px groove #337235 ;
     color: white;
     padding: 16px 32px;
     text-decoration: none;
     margin: 4px 2px;
     cursor: pointer;
+    border-radius: 10px;
 }
-
 
 @media only screen and (max-width:600px) {
     h1{
