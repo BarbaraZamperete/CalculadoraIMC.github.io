@@ -20,41 +20,24 @@ h1{
     font-size: 20px;
     color: rgb(231, 14, 14);
 }
-/*
-#res_container{
-    height: 70px;
-    width: 300px;
-    border-color: black;
-    border-width: 5px;
-    display: flex;
-    flex-direction: row;
-    
+table{
+    border-collapse: collapse;
+    border: 2px solid black;
+}
+table .titulo th{
+    background-color: rgb(25, 37, 61);
+    color: white;
+    font-weight: lighter;
+    font-size: 18px;
+    padding: 4px;
 }
 
-#alto{
-    background-color: rgb(243, 41, 41);
-    height: 100%;
-    width: 100px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+table .escopo th{
+    font-weight: normal;
+    border-bottom: 1px solid black;
+    font-size: 14px;
+    padding: 5px;
 }
-#medio{
-    background-color: rgb(57, 200, 57);
-    height: 100%;
-    width: 100px;
-}
-#baixo{
-    background-color: rgb(56, 56, 221);
-    height: 100%;
-    width: 100px;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-}
-#imc_resposta{
-    font-size: 20px;
-    align-self: center;
-}
-*/
 form{
     padding: 20px;
     border-style: groove;

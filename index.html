@@ -18,12 +18,38 @@
     </form>
     <p id="resposta">0</p>
     <p id="classifica"></p>
-    <div id="res_container">
-        <div id="baixo"></div>
-        <div id="medio"></div>
-        <div id="alto"></div>
-        
-    </div>
+    <table id="res_container">
+        <tr class="titulo">
+            <th>IMC</th>
+            <th>Classificação</th>
+            <th>Grau de Obesidade</th>
+        </tr>
+        <tr class="escopo" id="cat1">
+            <th>Menor que 18,5</th>
+            <th>Magreza</th>
+            <th>0</th>
+        </tr>
+        <tr class="escopo" id="cat2">
+            <th>Entre 18,5 e 24,9</th>
+            <th>Normal</th>
+            <th>0</th>
+        </tr>
+        <tr class="escopo" id="cat3">
+            <th>Entre 25 e 29,9</th>
+            <th>Sobrepeso</th>
+            <th>1</th>
+        </tr>
+        <tr class="escopo" id="cat4">
+            <th>Entre 30 e 39,9</th>
+            <th>Obesidade</th>
+            <th>2</th>
+        </tr>
+        <tr class="escopo" id="cat5">
+            <th>Maior que 40</th>
+            <th>Obesidade Grave</th>
+            <th>3</th>
+        </tr>
+    </table>
     <script src="action_submit.js"></script>
 </body>
 </html>
