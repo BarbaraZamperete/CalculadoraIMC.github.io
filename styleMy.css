@@ -27,7 +27,7 @@ table{
 table .titulo th{
     background-color: rgb(25, 37, 61);
     color: white;
-    font-weight: lighter;
+    font-weight: normal;
     font-size: 18px;
     padding: 4px;
 }

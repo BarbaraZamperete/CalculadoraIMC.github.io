@@ -13,6 +13,7 @@ function imc_cal(){
         res.textContent = imc.toFixed(1)
         classifica(imc, res)
     }
+    window.location.href = '#res_container'
     
 }
 
@@ -41,8 +42,8 @@ function classifica(imc, res){
         catname = 'cat1'
     }else if(imc<24.9){
         lb.textContent = "Peso normal"
-        lb.style.color = 'green'
-        res.style.color = 'green'
+        lb.style.color = '#4CAF50'
+        res.style.color = '#4CAF50'
         catname = 'cat2'
     }else if(imc<29.9){
         lb.textContent = "Sobrepeso"
@@ -59,16 +60,16 @@ function classifica(imc, res){
     }
     let cat = window.document.getElementById(catname)
     if (catname == 'cat2'){
-        cat.style.backgroundColor = 'green'
+        cat.style.backgroundColor = '#4CAF50'
     }else{
-        cat.style.backgroundColor = 'red'
+        cat.style.backgroundColor = '#af4c4c'
     }
     cat.style.color = 'white'
 }
 
 function colorRed(res, lb){
-    lb.style.color = 'red'
-    res.style.color = 'red'
+    lb.style.color = '#af4c4c'
+    res.style.color = '#af4c4c'
 }
 //console.log("oi")
 //imc_cal()
