@@ -1,3 +1,1 @@
-# zamperetta.github.io
-
-Essa é só uma página de teste
+Esse é um site simples para a prática de JavaScript e HTML/CSS que calcula o IMC do usuário, informa em qual classificação ele se encaixa e, caso esteja fora do peso ideal, quanto o seu pesso deve mudar para atingir o status normal
