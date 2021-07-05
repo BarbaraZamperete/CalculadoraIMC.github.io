@@ -19,15 +19,15 @@ function imc_cal(){
 
 function reset(){
     let res = window.document.getElementById("resposta")
-    window.document.getElementById('cat1').style.backgroundColor = 'transparent'
+    window.document.getElementById('cat1').style.backgroundColor = 'white'
     window.document.getElementById('cat1').style.color = 'black'
-    window.document.getElementById('cat2').style.backgroundColor = 'transparent'
+    window.document.getElementById('cat2').style.backgroundColor = 'white'
     window.document.getElementById('cat2').style.color = 'black'
-    window.document.getElementById('cat3').style.backgroundColor = 'transparent'
+    window.document.getElementById('cat3').style.backgroundColor = 'white'
     window.document.getElementById('cat3').style.color = 'black'
-    window.document.getElementById('cat4').style.backgroundColor = 'transparent'
+    window.document.getElementById('cat4').style.backgroundColor = 'white'
     window.document.getElementById('cat4').style.color = 'black'
-    window.document.getElementById('cat5').style.backgroundColor = 'transparent'
+    window.document.getElementById('cat5').style.backgroundColor = 'white'
     window.document.getElementById('cat5').style.color = 'black'
     res.style.color = 'black'
     res.textContent = '0.0'
