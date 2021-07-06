@@ -100,5 +100,5 @@ function colorRed(res, lb){
     lb.style.color = '#af4c4c'
     res.style.color = '#af4c4c'
 }
-//console.log("oi")
+console.log("oi")
 //imc_cal()
