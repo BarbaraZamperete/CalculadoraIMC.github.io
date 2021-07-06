@@ -66,7 +66,7 @@ input[type=number] {
     border-radius: 10px;
     
 }
-input[type=submit]{
+input[type=submit], input[type=button]{
     background-color: #4CAF50;
     border: 2px groove #337235 ;
     color: white;
