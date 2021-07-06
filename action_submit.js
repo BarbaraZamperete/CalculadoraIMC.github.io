@@ -21,8 +21,7 @@ function imc_cal(){
             av.textContent = `Você precisa de ${peso_dif}kg`
         }
     }
-    const refe = window.document.getElementById('res_container')
-    refe.scrollIntoView({behavior: 'smooth'})
+    window.location.href('#res_container')
 
     
 }
