@@ -21,7 +21,6 @@ function imc_cal(){
             av.textContent = `Você precisa de ${peso_dif}kg`
         }
     }
-    window.location.href('#res_container')
 
     
 }
