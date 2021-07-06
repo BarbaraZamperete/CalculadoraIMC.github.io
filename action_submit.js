@@ -21,7 +21,8 @@ function imc_cal(){
             av.textContent = `Você precisa de ${peso_dif}kg`
         }
     }
-    window.location.href = '#res_container'
+    const refe = window.document.getElementById('res_container')
+    refe.scrollIntoView({behavior: 'smooth'})
 
     
 }
@@ -100,5 +101,5 @@ function colorRed(res, lb){
     lb.style.color = '#af4c4c'
     res.style.color = '#af4c4c'
 }
-console.log("oi")
+//console.log("oi")
 //imc_cal()
